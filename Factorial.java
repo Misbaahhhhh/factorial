@@ -1,8 +1,10 @@
 public class Factorial {
   public static void main(String[] args){
-    int n = args.length > 0 ? Integer.parseInt(args[0]) : 5;
-    BigInteger f = BigInteger.ONE;
-    for(int i=1;i<=n;i++) f = f.multiply(BigInteger.valueOf(i));
-    System.out.println("Factorial of " + n + " = " + f.toString());
+    int n = 5;
+    int result = 1;
+    for (int i = 1; i <= n; i++) {
+      result =result * i;
+    }
+    System.out.println("Factorial of " + n + " is: " + result);
   }
 }
